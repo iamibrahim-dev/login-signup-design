@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+       
+        function setTitle(x){
+            document.title=x;
+        }
+        
+        function defTitle(){
+            document.title="ClicKart|Worlds Best Electronic Store At Your Finger Tips ";
+        }
+        defTitle();
+    </script>
+    <style>
+    
+    body
+        {
+            background-color:floralwhite;
+        }
+        form
+        {
+            background-color: white;
+        }
+    
+    </style>
+    
+
+<body>
+    
+
+    <header class="w3-container w3-card-4 w3-blue w3-animate-top" style="position: sticky" style="margin-bottom: 25px;">
+    
+        <h2 class="w3-button w3-hover-purple w3-left w3-animate-left" >
+            
+            <b style="font-size:40px;font-family: 'tangerine',serif"> ClicKart</b>   
+            <i class="fa fa-shopping-cart" style="font-size:36px">
+            </i>
+        </h2>
+        
+        
+         <h4 class="w3-button w3-border-orange w3-hover-blue 
+                    w3-bottombar  w3-hover-border-yellow w3-right w3-margin w3-animate-zoom" onclick="document.getElementById('signupForm').style.display='block';document.getElementById('loginForm').style.display='none';setTitle('Signup');">
+             New Customer
+        </h4>
+        
+        <h4 class="w3-button w3-border-orange w3-hover-blue 
+                    w3-bottombar  w3-hover-border-yellow w3-right w3-margin w3-animate-zoom" onclick="document.getElementById('loginForm').style.display='block';document.getElementById('signupForm').style.display='none';setTitle('Login')">
+            Login
+        </h4>
+        
+    
+    </header>
+    
+    <img src="gg.jpg" class="w3-panel" style="width: 100%;max-height:60px; "/>
+    
+    
+    
+    <form action="login" id="loginForm" name="primaryLogin" method="post" style="z-index: 1; display: none" class="w3-card-4 w3-display-middle w3-padding w3-leftbar w3-border-red w3-hover-border-yellow w3-animate-opacity">
+        <h3 class="w3-left">Login </h3>
+          
+        <span class="w3-display-topright w3-padding w3-text-red w3-hover-text-green" onclick="this.parentElement.style.display='none';defTitle();" style="font-size: 32px;">&times;</span>
+        <br>
+        <table class="w3-left">    
+        
+            <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-user w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="uname" placeholder="Email or mobile number"/>
+            
+                </td>
+                
+    
+            </tr>  
+            
+            &nbsp
+            
+        
+            <tr class="w3-padding">
+        
+        
+                <td>
+                    <i class="fa fa-key w3-text-blue" style="font-size: 32px">
+                    </i>
+                </td>
+        
+        
+                <td>
+                    <input class="w3-input w3-animate-input" type="password" name="passwd" placeholder="PassWord"/>
+                </td>
+        
+            </tr>
+            
+            &nbsp
+            
+            <tr>
+                <td>
+                    <input class="w3-check" type="checkbox" name="ltype" value="remember">
+                </td>
+                
+                <td>
+                  <label> Keep me signed in.</label> 
+                </td>
+            </tr>
+            
+            <tr class="w3-padding">
+                <td>
+                    &nbsp;
+                </td>
+                
+                <td>
+                    <input type="submit" value="Login" class="w3-button w3-orange w3-hover-green"/>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    
+    
+    
+    <form action="signup" id="signupForm" name="createaccount" method="post" style="z-index:1;display: none" class="w3-card-4 w3-display-middle w3-padding w3-leftbar w3-border-red w3-hover-border-yellow w3-animate-opacity">
+        <h3 class="w3-left">SignUp </h3>
+   
+        <span class="w3-display-topright w3-padding w3-text-red w3-hover-text-green" onclick="this.parentElement.style.display='none';defTitle();" style="font-size: 32px;">&times;</span>
+        <br>
+        <table class="w3-left">    
+        
+            <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-user w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="fname" placeholder="First Name"/>
+            
+                </td>
+                
+    
+            </tr>
+            &nbsp
+               <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-user w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="lname" placeholder="Last Name"/>
+            
+                </td>
+                
+    
+            </tr>  
+            </br>
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-mobile w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="tel" name="mno" placeholder="Mobile Number"/>
+            
+                </td>
+                
+    
+            </tr>  
+        &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-at w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="email" name="email" placeholder="Email Address"/>
+            
+                </td>
+                
+    
+            </tr>  
+        &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-envelope w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="address" placeholder="Current Address"/>
+            
+                </td>
+                
+    
+            </tr>  
+        &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-building w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="city" placeholder="City"/>
+            
+                </td>
+                
+    
+            </tr>  
+         
+         &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-flag w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="text" name="country" placeholder="Country"/>
+            
+                </td>
+                
+    
+            </tr> 
+        &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-lock w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="password" name="key1" placeholder="Set 8 Character Password"/>
+            
+                </td>
+                
+    
+            </tr>  
+         &nbsp
+            <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <i class="fa fa-lock w3-left w3-text-blue" style="font-size: 32px"></i>
+            
+                </td>
+            
+                <td>
+                
+                    <input class="w3-input w3-animate-input w3-right" type="password" name="keyrep" placeholder="Repeat Password"/>
+            
+                </td>
+                
+    
+            </tr> 
+        &nbsp
+           <tr class="w3-padding">
+            
+                <td>
+    
+                
+                    <input class="w3-check w3-left w3-text-blue" style="font-size: 32px" type="checkbox" name="agreement" value="agree" onchange="document.getElementById('submit').disabled=!this.checked"
+                           ></input>
+            
+                </td>
+            
+                <td>
+                
+                    I agree to the ClicKart Terms And Conditions
+            
+                </td>
+                
+    
+            </tr>  
+       <tr class="w3-padding">
+            
+                <td>
+                    &nbsp;
+                </td>
+            
+                <td>
+                
+                    <input type="submit" id="submit" value="SignUp" class="w3-button  w3-orange w3-hover-green" disabled/>
+            
+                </td>
+                
+    
+            </tr>  
+         
+         
+         
+         
+    
+            
+         
+        </table>
+
+    </form>
+    
+    
+
+<h2 class="w3-panel w3-card w3-green" style="width:100%;">Trending Offers</h2>
+<div class="w3-panel" >
+<img src="Air%20Conditioners.png"   class="w3-col s4 m4 l4" alt="Air Conditioners Offer"/>
+<img src="Smart%20Tv's.png"         class="w3-col s4 m4 l4" alt="Smart Tv Offer"        />
+<img src="Refrigerators.png"        class="w3-col s4 m4 l4" alt="Refrigerator Offer"    />    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer class="w3-container w3-topbar w3-teal" style="margin-top:97%; position:sticky;">
+    <h4>&copy;copyrights-2018 ibrahim665@outlook.in</h4>
+    
+    </footer>
+    
+    </body>
+</html>
+
+
